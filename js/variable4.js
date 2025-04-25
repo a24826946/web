@@ -27,5 +27,7 @@ console.log(num2 != num1); //값만 비교.
 console.log(num2 !== num1); //값. 타입 비교.
 
 //논리연산자.
-console.log(num1 >= num2 || num1 < 100);
-console.log(num1 >= num2 && num1 < 100);
+
+console.log(num1 >= num2 || num1 < 100); 
+console.log(num1 >= num2 && num1 < 100); //좌우값이 같아야 트루
+console.log
