@@ -5,7 +5,7 @@ let data = JSON.parse(json); //json문자열->객체변환
 console.log(data); //객체.
 
 //button<삭제> 템플릿
-let btnTemplate = "<button class='btn-btn danger' onclick='deleteTr(event)'>삭제</button>";
+let btnTemplate = "<button class='btn btn-danger' onclick='deleteTr(event)'>삭제</button>";
 // console.clear(); //로그지우기
 for (let emp of data) { //for(let i =0; i < data.length; i++)써도됨
   // console.log(emp);
@@ -18,6 +18,7 @@ elist += "<thead><tr>"
 for (let emp of fields) {
   elist += `<th>${emp}</th>`;
 }
+elist += '<th>삭제</th>'
 elist += "</tr></thead><tbody>";
 //console.log(emp);
 for (let field of data) {
@@ -72,3 +73,9 @@ function makeTr(emp = {}) {
   str += "</tr>";
   return str;
 }//end of makeTr
+
+
+function deleteTr(param1) {
+  param1.target.parentElement.parentElement.remove();
+}
+
