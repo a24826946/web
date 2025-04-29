@@ -10,7 +10,7 @@
 
 
 
-
+//1
 function max(num1 = 10, num2 = 17) {
   if (num1 > num2)
     console.log(`두개의 숫자중 큰값은 ${num1} 입니다`)
@@ -22,10 +22,13 @@ function max(num1 = 10, num2 = 17) {
 max(20, 17)
 
 
-// function sumUpTo(7)
+//2
+//  function sumUpTo(7)
 
 // let sum = 0
 // for (let i = 1; i < 8; i++) {
 //   sum += i;
 // }
+console.log(`1부터 ${num}까지의 합은 ${sum}까지 입니다.`)
 // document.write(`1부터 7까지의 합은 ${sum}`);
+
