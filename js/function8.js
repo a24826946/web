@@ -79,3 +79,7 @@ function deleteTr(param1) {
   param1.target.parentElement.parentElement.remove();
 }
 
+// //function deleteTr(e) {
+//  console.log(e);
+//  e.target.parentElement.parentElement.remove();
+// }
